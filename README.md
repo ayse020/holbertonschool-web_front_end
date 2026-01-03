@@ -1,6 +1,6 @@
-# HTML Advanced Project
+# Holberton School - HTML Advanced
 
-This project contains HTML advanced tasks from Holberton School.
+This project contains HTML advanced tasks.
 
-## Task 0: Create your first webpage
-Create a basic HTML file with doctype, html tags, language and direction attributes.
+## Task 0
+Create first webpage with basic HTML structure.
