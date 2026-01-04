@@ -1,21 +1,24 @@
 # HTML Advanced Project
 
-This project contains HTML exercises for the Holberton School Web Front-End curriculum.
+This project contains HTML exercises for learning web development fundamentals.
 
 ## Project Structure
 
-- `html_advanced/` - Directory containing all HTML files for the advanced HTML exercises
 - `0-index.html` - First HTML file with basic structure
-- `1-index.html` - HTML file with head and body structure
-- ... (other HTML files will be added as tasks progress)
+- (Other files will be added as the project progresses)
 
-## Tasks Overview
+## Tasks
 
-Task 0: Create first HTML file with basic DOCTYPE and html tag
-Task 1: Add head and body structure
-Task 2: Add meta tags and title
-... (and so on)
+### Task 0: Create your first webpage
+Create a basic HTML file with:
+- Doctype declaration
+- HTML tag with language and direction attributes
+
+### How to View
+Open any HTML file in a web browser to see the result.
 
 ## Author
+[Your Name]
 
-Ayse
+## License
+This project is for educational purposes.
