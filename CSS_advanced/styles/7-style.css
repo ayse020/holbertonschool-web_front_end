@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
+
+:root {
+    --font-family-base: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
