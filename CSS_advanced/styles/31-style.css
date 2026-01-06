@@ -1,0 +1,15 @@
+/* card-quote inside card-testimonial */
+.card-testimonial .card-quote {
+    position: relative; /* Parentə nisbətən yerləşdirmə */
+}
+
+/* ::before pseudo element of card-quote */
+.card-testimonial .card-quote::before {
+    content: "\201C";         /* Sitat işarəsi “ */
+    position: absolute;       /* Mütləq yerləşdirmə */
+    top: -4.5rem;             /* Yuxarıdan -4.5rem */
+    left: -1rem;              /* Soldan -1rem */
+    color: #efeded;           /* Ön plan rəngi */
+    font-size: 10rem;         /* Font ölçüsü */
+    z-index: -1;              /* Arxa plan */
+}
