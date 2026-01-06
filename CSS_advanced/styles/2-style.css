@@ -1,0 +1,26 @@
+/* styles/2-style.css */
+
+/* Body elementi üçün mətn rəngi */
+body {
+    color: #161616;
+}
+
+/* Bütün anchor elementləri (linklər) üçün rəng */
+a {
+    color: #161616;
+}
+
+/* visually-hidden class-ı olan elementləri gizlət */
+.visually-hidden {
+    display: none;
+}
+
+/* card-category class-ı olan elementlərin rəngi */
+.card-category {
+    color: #D73953;
+}
+
+/* section-tagline class-ı olan elementlərin rəngi */
+.section-tagline {
+    color: #D73953;
+}
