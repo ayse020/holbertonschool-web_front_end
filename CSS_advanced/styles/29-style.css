@@ -1,0 +1,18 @@
+:root {
+    --nav-item-link-hover: var(--color-white); /* Hover zamanı link rəngi */
+}
+
+nav .nav-link::before {
+    content: ""; /* Empty content */
+    position: absolute; /* Absolutely positioned */
+    bottom: 0;          
+    left: 0;            
+    background-color: var(--color-white); /* Initial background color */
+    width: 0;           
+    height: 0.2rem;     
+}
+
+nav .nav-item:hover .nav-link::before {
+    background-color: var(--color-primary); /* Background color on hover */
+    width: 100%;                             
+}
