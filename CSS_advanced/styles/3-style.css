@@ -1,0 +1,36 @@
+/* styles/3-style.css */
+
+/* Root elementində CSS dəyişənlərini təyin edək */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+}
+
+/* Body elementi üçün mətn rəngi (dəyişən istifadə edərək) */
+body {
+    color: var(--text-color);
+}
+
+/* Bütün anchor elementləri (linklər) üçün rəng (dəyişən istifadə edərək) */
+a {
+    color: var(--text-color);
+}
+
+/* visually-hidden class-ı olan elementləri gizlət */
+.visually-hidden {
+    display: none;
+}
+
+/* card-category class-ı olan elementlərin rəngi (dəyişən istifadə edərək) */
+.card-category {
+    color: var(--color-primary);
+}
+
+/* section-tagline class-ı olan elementlərin rəngi (dəyişən istifadə edərək) */
+.section-tagline {
+    color: var(--color-primary);
+}
