@@ -1,0 +1,16 @@
+/* Services card background and hover styles */
+.card-services .card-title {
+    margin: 0; /* Remove margin on all sides */
+}
+
+.card-services a {
+    display: block; /* Render as block level element */
+    padding: calc(2 * var(--root-element)); /* 2x root element */
+    background-color: var(--color-light-grey); /* Set background */
+}
+
+.card-services a:hover {
+    color: var(--color-white); /* Hover text color */
+    background-color: var(--color-primary); /* Hover background color */
+    text-decoration: none; /* Remove text decoration */
+}
