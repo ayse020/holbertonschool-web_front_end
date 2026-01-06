@@ -1,0 +1,19 @@
+/* Target only anchor elements with href attribute (hyperlinks) */
+a[href] {
+    /* Add any base styles for links here if needed */
+}
+
+/* Visited state for links */
+a[href]:visited {
+    font-style: italic;
+}
+
+/* Hover state for links */
+a[href]:hover {
+    text-decoration: underline;
+}
+
+/* Active state for links */
+a[href]:active {
+    background-color: var(--color-light-grey);
+}
