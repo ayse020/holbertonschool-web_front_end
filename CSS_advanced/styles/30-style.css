@@ -1,0 +1,58 @@
+/* card-outer inside card-work */
+.card-work .card-outer {
+    position: relative; /* Nisbətən yerləşdirmə */
+    overflow: hidden;   /* Daşmanı gizlət */
+}
+
+/* Image inside card-image inside card-work */
+.card-work .card-image img {
+    height: 30rem;      /* Hündürlük */
+    width: 100%;        /* Eni */
+    object-fit: cover;  /* Şəkil sığdırma */
+    vertical-align: bottom; /* Aşağıya düzülmə */
+}
+
+/* card-inner inside card-work */
+.card-work .card-inner {
+    position: absolute; /* Mütləq yerləşdirmə */
+    top: -0.1rem;      
+    left: -0.1rem;     
+    right: -0.1rem;    
+    z-index: 1;        
+}
+
+/* Hover effect on card-inner */
+.card-work .card-inner:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* card-title inside card-work */
+.card-work .card-title {
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    height: 100%;
+    position: relative;
+}
+
+/* link inside card-title */
+.card-work .card-title a {
+    display: block;
+    text-decoration: none;
+    padding-top: 45%;
+}
+
+/* after pseudo-element for link */
+.card-work .card-title a::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+}
+
+/* Hover effect on card-title */
+.card-work .card-title:hover {
+    opacity: 1;
+}
