@@ -1,0 +1,31 @@
+/* Custom properties for transitions */
+:root {
+    --transition-duration: 0.3s; /* Transition duration */
+    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01); /* Timing function */
+}
+
+/* Transformations on card work */
+.card-work:hover .card-image {
+    transform: scale(1.2); /* Zoom in image */
+    transition: var(--transition-duration) var(--transition-cubic-bezier); /* Animate */
+}
+
+.card-work:hover .card-outer {
+    transform: scale(0.95); /* Shrink outer card */
+}
+
+/* Animations on navigation items */
+.nav .nav-link::before {
+    transition: var(--transition-duration) var(--transition-cubic-bezier); /* Animate nav underline */
+}
+
+/* Animate button background */
+.button:hover {
+    transition-duration: var(--transition-duration); /* Duration of hover */
+    transition-property: color, background-color; /* Animate color and background */
+}
+
+/* Add transitions to card works */
+.card-work .card-inner {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
