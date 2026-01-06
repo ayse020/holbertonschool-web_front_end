@@ -1,0 +1,6 @@
+/* 20. Clear the context of the grid */
+.row::after {
+    content: "";          /* No content */
+    display: table;       /* Displayed as a table */
+    clear: both;          /* Don't allow floating elements on either side */
+}
