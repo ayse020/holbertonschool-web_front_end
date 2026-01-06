@@ -1,0 +1,23 @@
+:root {
+    --header-padding: 4rem 0 0;                 /* Headerın padding-i */
+    --header-logo-position: relative;           /* Logo container üçün yerləşmə */
+    --header-logo-link-display: inline-block;   /* Linkin display tipi */
+    --header-logo-link-position: absolute;      /* Linkin yerləşmə tipi */
+    --header-logo-link-top: -1rem;             /* Linkin üst mövqeyi */
+    --header-logo-link-left: 0;                /* Linkin sol mövqeyi */
+}
+
+.header {
+    padding: var(--header-padding); /* Header padding */
+}
+
+.header-logo {
+    position: var(--header-logo-position); /* Logo container mövqeyi */
+}
+
+.header-logo a {
+    display: var(--header-logo-link-display);  /* Görünüş */
+    position: var(--header-logo-link-position); /* Yerləşmə */
+    top: var(--header-logo-link-top);          /* Üst mövqe */
+    left: var(--header-logo-link-left);        /* Sol mövqe */
+}
