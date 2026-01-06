@@ -1,0 +1,34 @@
+/* Root variables for buttons */
+:root {
+    --button-display: inline-block; /* Display as inline-block */
+    --button-padding: 1.5rem 3rem; /* Padding top/bottom 1.5rem, left/right 3rem */
+    --button-border: 0.2rem solid var(--color-primary); /* Border with primary color */
+    --button-color: var(--color-black); /* Default text color */
+    --button-text-decoration: none; /* No underline */
+    --button-font-size: var(--font-size-large); /* Font size */
+    --button-hover-color: var(--color-white); /* Text color on hover */
+    --button-hover-text-decoration: none; /* No underline on hover */
+    --button-hover-background: var(--color-primary); /* Background color on hover */
+}
+
+/* Button styling */
+.button {
+    display: var(--button-display);
+    padding: var(--button-padding);
+    border: var(--button-border);
+    font-size: var(--button-font-size);
+    color: var(--button-color);
+    text-decoration: var(--button-text-decoration);
+}
+
+/* Button hover state */
+.button:hover {
+    color: var(--button-hover-color);
+    text-decoration: var(--button-hover-text-decoration);
+    background-color: var(--button-hover-background);
+}
+
+/* Dark theme adjustments */
+[data-section-theme="dark"] {
+    --button-color: var(--color-white); /* Button text is white in dark mode */
+}
