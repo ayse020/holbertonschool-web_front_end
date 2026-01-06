@@ -1,0 +1,46 @@
+/* styles/4-style.css */
+
+/* Task 3-dən gələn dəyişənlər */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    
+    /* Task 4 üçün yeni font dəyişənləri */
+    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Body elementi üçün styl */
+body {
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+}
+
+/* Bütün anchor elementləri (linklər) üçün rəng */
+a {
+    color: var(--text-color);
+}
+
+/* visually-hidden class-ı olan elementləri gizlət */
+.visually-hidden {
+    display: none;
+}
+
+/* card-category class-ı olan elementlərin rəngi */
+.card-category {
+    color: var(--color-primary);
+}
+
+/* section-tagline class-ı olan elementlərin rəngi */
+.section-tagline {
+    color: var(--color-primary);
+}
+
+/* Bütün başlıq səviyyələri üçün font-family */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+}
