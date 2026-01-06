@@ -1,0 +1,5 @@
+/* Custom properties for section title */
+:root {
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+}
