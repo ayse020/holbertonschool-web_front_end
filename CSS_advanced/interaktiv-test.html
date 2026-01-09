@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Interactive Font Size Test</title>
+    <title>Interactive Font & Section Tagline Test</title>
     <link rel="stylesheet" href="styles/5-style.css">
+    <link rel="stylesheet" href="styles/11-style.css">
     <style>
         body {
             padding: 20px;
@@ -20,66 +21,60 @@
         }
         .title { font-family: var(--font-family-title); }
         label { display: block; margin-top: 10px; font-weight: bold; }
+
+        /* Section tagline styling (11-style.css ilə eyni effekt üçün) */
+        .section-tagline {
+            font-family: var(--font-family-title);
+            text-transform: var(--section-tagline-transform);
+            font-weight: var(--font-weight-bold);
+            font-size: 2rem; /* default ölçü */
+        }
     </style>
 </head>
 <body>
     <h1 class="title" style="font-size: var(--font-size-xx-large);">Interactive Font & Color Test</h1>
 
+    <!-- Section tagline testi -->
+    <div class="test-box section-tagline">This is a section tagline</div>
+
+    <!-- Small font test -->
     <div class="test-box" id="small-box">Small font (var(--font-size-small))</div>
     <label for="small-slider">Adjust Small Font:</label>
     <input type="range" id="small-slider" min="0.8" max="3" step="0.1" value="1.2">
 
+    <!-- Medium font test -->
     <div class="test-box" id="medium-box">Medium font (var(--font-size-medium))</div>
     <label for="medium-slider">Adjust Medium Font:</label>
     <input type="range" id="medium-slider" min="0.8" max="3" step="0.1" value="1.6">
 
+    <!-- Large font test -->
     <div class="test-box" id="large-box">Large font (var(--font-size-large))</div>
     <label for="large-slider">Adjust Large Font:</label>
     <input type="range" id="large-slider" min="0.8" max="3" step="0.1" value="1.8">
 
-    <div class="test-box" id="x-large-box">X-Large font (var(--font-size-x-large))</div>
-    <label for="x-large-slider">Adjust X-Large Font:</label>
-    <input type="range" id="x-large-slider" min="1" max="5" step="0.1" value="2.3">
-
-    <div class="test-box title" id="xx-large-box">XX-Large font (var(--font-size-xx-large))</div>
-    <label for="xx-large-slider">Adjust XX-Large Font:</label>
-    <input type="range" id="xx-large-slider" min="1" max="6" step="0.1" value="4.8">
-
     <script>
-        const fontBoxes = [
-            { box: 'small-box', slider: 'small-slider' },
-            { box: 'medium-box', slider: 'medium-slider' },
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Font Size Test</title>
-    <link rel="stylesheet" href="styles/5-style.css">
-    <style>
-        body {
-            padding: 20px;
-        }
-        .test-box {
-            margin: 10px 0;
-            padding: 5px;
-            border: 1px solid #ccc;
-        }
-    </style>
-</head>
-<body>
-    <h1>Task 5: Font Size Test</h1>
+        // Sliders üçün interaktiv dəyişmə
+        const smallSlider = document.getElementById('small-slider');
+        const smallBox = document.getElementById('small-box');
 
-    <div class="test-box" style="font-size: var(--font-size-small);">
-        Small font (var(--font-size-small))
-    </div>
-    <div class="test-box" style="font-size: var(--font-size-medium);">
-        Medium font (var(--font-size-medium))
-    </div>
-    <div class="test-box" style="font-size: var(--font-size-large);">
-        Large font (var(--font-size-large))
-    </div>
-    <div class="test-box" style="font-size: var(--font-size-x-large);">
-        X-Large font (var(--font-size-x-large))
-    </div>
-    <div class="test-box" style="font-size: var(--font-size
+        const mediumSlider = document.getElementById('medium-slider');
+        const mediumBox = document.getElementById('medium-box');
+
+        const largeSlider = document.getElementById('large-slider');
+        const largeBox = document.getElementById('large-box');
+
+        smallSlider.addEventListener('input', () => {
+            smallBox.style.fontSize = smallSlider.value + 'rem';
+        });
+
+        mediumSlider.addEventListener('input', () => {
+            mediumBox.style.fontSize = mediumSlider.value + 'rem';
+        });
+
+        largeSlider.addEventListener('input', () => {
+            largeBox.style.fontSize = largeSlider.value + 'rem';
+        });
+    </script>
+</body>
+</html>
 
