@@ -1,9 +1,15 @@
+/* Step 1: Root variables */
 :root {
-    --nav-item-font-family: 'Arial', sans-serif; /* misal üçün */
+    --nav-item-font-family: 'Arial', sans-serif; /* Font ailəsi nümunəsi */
 }
 
-/* Step: apply font-family to nav-item classes inside nav */
+/* Step 2: nav-item font-family */
 .nav .nav-item {
     font-family: var(--nav-item-font-family);
+}
+
+/* Step 3: navbar-menu float right */
+.navbar-menu {
+    float: right;
 }
 
