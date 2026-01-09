@@ -13,7 +13,8 @@
     float: right;
 }
 
-/* nav margins set to 0 */
+/* nav margins and padding set to 0 */
 .nav {
     margin: 0;
+    padding: 0;
 }
