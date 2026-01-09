@@ -13,8 +13,9 @@
     float: right;
 }
 
-/* nav margins and padding set to 0 */
+/* nav margins, padding and list-style */
 .nav {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
