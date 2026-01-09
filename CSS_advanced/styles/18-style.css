@@ -1,11 +1,13 @@
 /* Root variables */
 :root {
     --nav-item-font-family: 'Arial', sans-serif; /* Font ailəsi nümunəsi */
+    --nav-item-font-weight: 700; /* Font weight nümunəsi */
 }
 
-/* nav-item font-family */
+/* nav-item font-family and font-weight */
 .nav .nav-item {
     font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
 }
 
 /* navbar-menu float right */
