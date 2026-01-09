@@ -1,18 +1,23 @@
 /* Root variables */
 :root {
-    --nav-item-font-family: 'Arial', sans-serif;
-    --nav-item-font-weight: 700;
-    --nav-item-font-size: 1.6rem;
-    --nav-item-letter-spacing: 0.05rem;
+    --font-family-title: 'Arial', sans-serif; /* Əgər əvvəlki layihədə yoxdursa əlavə et */
+    --font-weight-bold: 700;                  /* Əgər əvvəlki layihədə yoxdursa əlavə et */
+    --font-size-medium: 1.6rem;               /* Əgər əvvəlki layihədə yoxdursa əlavə et */
+
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 0.04rem; /* 4% of root element */
     --nav-item-display: inline-block;
     --nav-item-margin: 0 1rem;
     --nav-link-display: block;
+    --nav-item-link-hover: #ff0000; /* istədiyin rəng */
 }
 
 /* Nav styles */
 .nav {
     margin: 0;
-    padding: 0;
+    padding: 0.5rem 0; /* top & bottom = yarım root element */
     list-style: none;
     text-align: center;
 }
@@ -35,4 +40,9 @@
 /* Nav-link styles */
 .nav .nav-link {
     display: var(--nav-link-display);
+    padding: 0.5rem 0; /* top & bottom = yarım root element */
+}
+
+.nav .nav-link:hover {
+    color: var(--nav-item-link-hover);
 }
