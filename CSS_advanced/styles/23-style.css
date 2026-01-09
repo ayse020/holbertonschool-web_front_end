@@ -1,12 +1,8 @@
-/* Dark theme fixes for footer and social links */
 .footer-address {
-    color: var(--text-color);
+  color: var(--text-color); /* Text color-u text-color property ilə təyin edin */
 }
 
 .social-link {
-    display: block;
+  display: block; /* Blok element olaraq render edin */
 }
 
-.social-link svg {
-    fill: var(--text-color);
-}
