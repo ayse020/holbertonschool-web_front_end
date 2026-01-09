@@ -4,14 +4,16 @@
     --nav-item-font-weight: 700;
     --nav-item-font-size: 1.6rem;
     --nav-item-letter-spacing: 0.05rem;
+    --nav-item-display: inline-block;
 }
 
-/* nav-item font-family, font-weight, font-size, letter-spacing */
+/* nav-item font-family, font-weight, font-size, letter-spacing, display */
 .nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
 }
 
 /* nav font-size applied to both nav and nav-item */
