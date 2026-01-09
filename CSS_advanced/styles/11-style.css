@@ -1,0 +1,8 @@
+:root {
+    --section-tagline-transform: uppercase; /* Text-transform for section tagline */
+}
+.section-tagline {
+    font-family: var(--font-family-title); /* Use title font */
+    text-transform: var(--section-tagline-transform); /* Apply uppercase transform */
+    font-weight: var(--font-weight-bold); /* Make text bold */
+}
