@@ -1,0 +1,8 @@
+/* Step 1: Universal box-sizing for all elements */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+    font-size: 16px;
+}
