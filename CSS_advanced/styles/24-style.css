@@ -1,16 +1,14 @@
-/* Services card background and hover styles */
 .card-services .card-title {
-    margin: 0; /* Remove margin on all sides */
+  margin: 0; /* Hər tərəfdən margin olmamalıdır */
 }
-
 .card-services a {
-    display: block; /* Render as block level element */
-    padding: calc(2 * var(--root-element)); /* 2x root element */
-    background-color: var(--color-light-grey); /* Set background */
+  display: block; /* Blok səviyyəsində göstər */
+  padding: 2rem; /* Root elementin 2x padding-i */
+  background-color: var(--color-light-grey); /* Background rəngi */
+}
+.card-services a:hover {
+  color: var(--color-white); /* Text rəngi hover zamanı */
+  background-color: var(--color-primary); /* Hover zamanı background rəngi */
+  text-decoration: none; /* Text dekorasiyasını sil */
 }
 
-.card-services a:hover {
-    color: var(--color-white); /* Hover text color */
-    background-color: var(--color-primary); /* Hover background color */
-    text-decoration: none; /* Remove text decoration */
-}
