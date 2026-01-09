@@ -1,35 +1,45 @@
+/* Root variables */
 :root {
     --section-tagline-margin: 0;
+    --root-padding: 1rem; /* Root element size for padding calculation */
+    --font-size-small: 1.2rem; /* For footer text */
+    --text-color: #333; /* Example text color for footer */
 }
 
+/* Section tagline */
 .section-tagline {
     margin: var(--section-tagline-margin);
 }
 
+/* UL row styles */
 ul.row {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
+/* Column 1/3 */
 .col-1-3 {
     width: 33.33%;
     float: left;
-    padding: calc(var(--font-size-medium) / 2);
+    padding: calc(var(--root-padding) / 2); /* Padding is half of root element */
 }
 
+/* Column 1/2 */
 .col-1-2 {
     width: 50%;
     float: left;
-    padding: calc(var(--font-size-medium) / 2);
+    padding: calc(var(--root-padding) / 2);
 }
 
+/* Footer copyright */
 .footer-copyright {
     margin: 0;
     font-size: var(--font-size-small);
     color: var(--text-color);
 }
 
+/* Footer UL alignment */
 footer ul {
     text-align: right;
 }
