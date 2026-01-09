@@ -1,0 +1,18 @@
+/* 5-style.css */
+
+/* Step 1: Define font-size variables in :root */
+:root {
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+}
+
+/* Step 2: Do NOT style html directly */
+
+/* Step 3: Style body font-size using medium variable */
+body {
+    font-size: var(--font-size-medium);
+}
+
