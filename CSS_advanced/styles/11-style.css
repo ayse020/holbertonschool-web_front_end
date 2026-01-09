@@ -1,11 +1,14 @@
-/* Step 1: Create custom property for text transformation */
+/* Step 1: Custom properties */
 :root {
   --section-tagline-transform: uppercase;
+  --font-family-title: 'Arial Black', Arial, sans-serif;
+  --font-weight-bold: 700;
 }
-/* Step 2: Style section tagline using custom properties */
+
+/* Step 2: Section tagline styling */
 .section-tagline {
-  font-family: var(--font-family-title);       /* Use the font-family-title variable */
-  text-transform: var(--section-tagline-transform);  /* Use the section-tagline-transform variable */
-  font-weight: var(--font-weight-bold);       /* Use the font-weight-bold variable */
+  font-family: var(--font-family-title);
+  text-transform: var(--section-tagline-transform);
+  font-weight: var(--font-weight-bold);
 }
 
