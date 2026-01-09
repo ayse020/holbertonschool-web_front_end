@@ -1,4 +1,19 @@
-[class^="col-"] {
-  float: left;
-  padding: 0.5rem;
+:root {
+    --font-size-medium: 1.6rem; /* Example if not defined */
 }
+
+/* Apply float and padding to all col-* classes */
+[class^="col-"] {
+    float: left;
+    padding: calc(var(--font-size-medium) / 2);
+}
+
+/* Individual col widths */
+.col-1-3 {
+    width: 33.33%;
+}
+
+.col-1-2 {
+    width: 50%;
+}
+
