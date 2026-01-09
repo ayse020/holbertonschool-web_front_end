@@ -1,58 +1,49 @@
-/* card-outer inside card-work */
-.card-work .card-outer {
-    position: relative; /* Nisbətən yerləşdirmə */
-    overflow: hidden;   /* Daşmanı gizlət */
-}
-
-/* Image inside card-image inside card-work */
-.card-work .card-image img {
-    height: 30rem;      /* Hündürlük */
-    width: 100%;        /* Eni */
-    object-fit: cover;  /* Şəkil sığdırma */
-    vertical-align: bottom; /* Aşağıya düzülmə */
-}
-
-/* card-inner inside card-work */
 .card-work .card-inner {
-    position: absolute; /* Mütləq yerləşdirmə */
-    top: -0.1rem;      
-    left: -0.1rem;     
-    right: -0.1rem;    
-    z-index: 1;        
+  position: absolute;  /* Tam mövqe */
+  top: -0.1rem;
+  left: -0.1rem;
+  right: -0.1rem;
+  z-index: 1;
 }
 
-/* Hover effect on card-inner */
-.card-work .card-inner:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+.card-work:hover .card-inner {
+  background-color: rgba(0, 0, 0, 0.7); /* Hover zamanı fon */
 }
 
-/* card-title inside card-work */
 .card-work .card-title {
-    text-align: center;
-    margin: 0;
-    opacity: 0;
-    height: 100%;
-    position: relative;
+  text-align: center;  /* Mətni mərkəzləşdir */
+  margin: 0;           /* Hər tərəfdən margin sıfır */
+  opacity: 0;          /* Başlanğıcda görünməsin */
+  height: 100%;        /* Tam hündürlük */
+  position: relative;  /* İçindəki link üçün relative */
 }
 
-/* link inside card-title */
 .card-work .card-title a {
-    display: block;
-    text-decoration: none;
-    padding-top: 45%;
+  display: block;        /* Blok səviyyəsində göstər */
+  text-decoration: none; /* Mətni dekorasiya etmə */
+  padding-top: 45%;      /* Üst padding */
 }
 
-/* after pseudo-element for link */
 .card-work .card-title a::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
+  content: "";           /* İçərik boş */
+  position: absolute;    /* Tam mövqe */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-/* Hover effect on card-title */
-.card-work .card-title:hover {
-    opacity: 1;
+.card-work:hover .card-title {
+  opacity: 1;            /* Hover zamanı görünən olsun */
 }
+.card-work .card-outer {
+  position: relative; /* Relative mövqe */
+  overflow: hidden;   /* Kartdan çıxan elementləri gizlə */
+}
+.card-work .card-image img {
+  height: 30rem;          /* Şəklin hündürlüyü */
+  width: 100%;            /* Şəklin eni */
+  object-fit: cover;      /* Şəkil kəsilmədən doldursun */
+  vertical-align: bottom; /* Şəklin alt hissəsi görünəcək */
+}
+
