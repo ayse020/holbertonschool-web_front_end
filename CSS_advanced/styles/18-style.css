@@ -6,6 +6,7 @@
     --nav-item-letter-spacing: 0.05rem;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 1rem;
+    --nav-link-display: block;
 }
 
 /* nav-item font-family, font-weight, font-size, letter-spacing, display, margin */
@@ -16,6 +17,11 @@
     letter-spacing: var(--nav-item-letter-spacing);
     display: var(--nav-item-display);
     margin: var(--nav-item-margin);
+}
+
+/* nav-link display */
+.nav .nav-link {
+    display: var(--nav-link-display);
 }
 
 /* nav font-size applied to both nav and nav-item */
