@@ -13,9 +13,10 @@
     float: right;
 }
 
-/* nav margins, padding and list-style */
+/* nav margins, padding, list-style, and text-align */
 .nav {
     margin: 0;
     padding: 0;
     list-style: none;
+    text-align: center;
 }
