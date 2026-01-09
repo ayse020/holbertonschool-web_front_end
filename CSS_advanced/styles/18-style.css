@@ -1,13 +1,20 @@
 /* Root variables */
 :root {
-    --nav-item-font-family: 'Arial', sans-serif; /* Font ailəsi nümunəsi */
-    --nav-item-font-weight: 700; /* Font weight nümunəsi */
+    --nav-item-font-family: 'Arial', sans-serif;
+    --nav-item-font-weight: 700;
+    --nav-item-font-size: 1.6rem;
 }
 
-/* nav-item font-family and font-weight */
+/* nav-item font-family, font-weight, font-size */
 .nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
+}
+
+/* nav font-size applied to both nav and nav-item */
+.nav,
+.nav .nav-item {
+    font-size: var(--nav-item-font-size);
 }
 
 /* navbar-menu float right */
@@ -15,7 +22,7 @@
     float: right;
 }
 
-/* nav margins, padding, list-style, and text-align */
+/* nav margins, padding, list-style, text-align */
 .nav {
     margin: 0;
     padding: 0;
