@@ -1,18 +1,17 @@
 :root {
-    --nav-item-link-hover: var(--color-white); /* Hover zamanı link rəngi */
+  --nav-item-link-hover: var(--color-white); /* Hover zamanı istifadə ediləcək rəng */
+}
+.nav-link::before {
+  content: "";                     /* İçəriyi boş et */
+  position: absolute;              /* Tam mövqe */
+  top: 0;                          /* Vertikal mövqe */
+  left: 0;                         /* Horizontal mövqe */
+  background-color: var(--color-white); /* Arxa fon rəngi */
+  width: 0;                        /* Başlanğıc en 0 */
+  height: 20%;                      /* Hündürlük root-un 20%-i */
+}
+.nav-item:hover .nav-link::before {
+  background-color: var(--color-primary); /* Hover zamanı rəng */
+  width: 100%;                            /* Hover zamanı en 100% */
 }
 
-nav .nav-link::before {
-    content: ""; /* Empty content */
-    position: absolute; /* Absolutely positioned */
-    bottom: 0;          
-    left: 0;            
-    background-color: var(--color-white); /* Initial background color */
-    width: 0;           
-    height: 0.2rem;     
-}
-
-nav .nav-item:hover .nav-link::before {
-    background-color: var(--color-primary); /* Background color on hover */
-    width: 100%;                             
-}
