@@ -4,7 +4,6 @@
   --font-size-large: 1.8rem;
   --font-size-x-large: 2.3rem;
   --font-size-xx-large: 4.8rem;
-  /* New variables for font weight */
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 }
@@ -15,11 +14,9 @@ html {
 
 body {
   font-size: var(--font-size-medium);
-  /* Apply regular weight to body */
   font-weight: var(--font-weight-regular);
 }
 
-/* Apply bold weight to all headings */
 h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-bold);
 }
