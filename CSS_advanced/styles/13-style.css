@@ -1,20 +1,19 @@
-/* Step 1: Target only anchor elements with href */
-a[href] {
-    /* Base styles for links if needed */
+/* Unvisited links (only <a> elements with href) */
+a:link {
 }
 
-/* Step 2: Visited links */
+/* Visited links */
 a:visited {
-    font-style: italic; /* Make visited links italic */
+    font-style: italic;
 }
 
-/* Step 3: Hover state */
+/* Hover state */
 a:hover {
-    text-decoration: underline; /* Underline text on hover */
+    text-decoration: underline;
 }
 
-/* Step 4: Active state */
+/* Active state */
 a:active {
-    background-color: var(--color-light-grey); /* Background color on click */
+    background-color: var(--color-light-grey);
 }
 
