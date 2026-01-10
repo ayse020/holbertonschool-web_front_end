@@ -1,7 +1,4 @@
-/* styles/11-style.css faylının məzmunu bu formada olmalıdır */
-
+/* Custom properties for fonts */
 :root {
-  --section-tagline-transform: uppercase;
+    --section-tagline-transform: uppercase;
 }
-
-.section-tagline{font-family:var(--font-family-title)}
