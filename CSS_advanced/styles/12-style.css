@@ -1,12 +1,11 @@
+/* Create custom property section-tagline-transform and set it to uppercase */
 :root {
-    --section-title-margin: 0; /* Margin for section titles */
-    --section-title-color: var(--color-black); /* Color of the section titles */
-}
-.section-title {
-    font-family: var(--font-family-title); /* Use title font */
-    font-size: var(--font-size-xx-large); /* Very large font */
-    font-weight: var(--font-weight-bold); /* Bold text */
-    margin: var(--section-title-margin); /* Margin from custom property */
-    color: var(--section-title-color); /* Text color from custom property */
+    --section-tagline-transform: uppercase;
 }
 
+/* Targeting the section-tagline class */
+.section-tagline {
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+}
